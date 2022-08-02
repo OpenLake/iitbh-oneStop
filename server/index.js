@@ -14,7 +14,10 @@ dotenv.config({ path: "../config.env" });
 const port = process.env.PORT || 3020;
 require("./db/conn");
 
-/// courses #################################################################33
+app.get("/", async (req, res) => {
+    res.send("your api's are enabled")
+});
+
 app.post("/api/courses/register", async (req, res) => {
   try {
     no = await Courses.find({ courseCode: req.body.courseCode }).count();
