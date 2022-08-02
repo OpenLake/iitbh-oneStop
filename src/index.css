@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.yell{
+    color: #DEFF4E;
+}
+.bg-yell{
+    background-color: #DEFF4E;
+}
+.border-yell{
+    border-color: #DEFF4E;
+}
